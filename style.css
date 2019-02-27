@@ -1,0 +1,57 @@
+body {
+	width: 60vw;
+	height: 100vh;
+	background-color: #BDBDBD;
+	margin: 0 20vw 0 20vw;
+	display: block;
+}
+
+.col {
+	height: 100%;
+	width: calc(100%/3);
+}
+
+.row {
+	height: 50%;
+	width: 100%;
+	display: flex;
+}
+
+/* Create any shaped DIV using CSS: https://css-tricks.com/the-shapes-of-css/ */
+.circle {
+	width: calc(18vw - 4px);
+    height: calc(18vw - 4px);
+    border-radius: 80%;
+}
+
+/* Material design colors: https://www.materialui.co/colors */
+.green {
+	background-color: #2E7D32;
+}
+.yellow {
+	background-color: #FFEB3B;
+}
+.red {
+	background-color: #E53935;
+}
+
+.center-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Classes to style the button */
+.restrict-img {
+	max-height: 75%;
+	max-width: 75%;
+	cursor: pointer;
+}
+/* Customize the shadow and dilation */
+.button {
+	filter: drop-shadow(10px 10px 4px #8A5B34);
+}
+.button:active {
+	transform: scale(0.95, 0.95);
+	filter: drop-shadow(4px 4px 2px #8A5B34);
+}
